@@ -1,0 +1,148 @@
+.main-content {
+    display: flex;
+    margin: 100px auto;
+    position: relative;
+}
+
+@media(max-width: 1023px) {
+    .main-content {
+        display: block;
+        margin: 30px auto;
+    }
+}
+
+@media(max-width: 767px) {
+    .main-content {
+        display: block;
+        margin: 50px auto;
+    }
+}
+
+.main-content::before {
+    content: "living in a big city";
+    background: var(--color-primary);
+    font-family: var(--title-font);
+    width: 60%;
+    height: 70px;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: -40px;
+    left: 100px;
+    text-align: right;
+    padding: 20px;
+}
+
+@media(max-width: 1023px) {
+    .main-content::before {
+        content: "living in a big city";
+        background: var(--color-primary);
+        font-family: var(--title-font);
+        width: 60%;
+        height: 70px;
+        text-transform: uppercase;
+        font-size: 30px;
+        font-weight: bold;
+        position: absolute;
+        top: -50px;
+        left: 50px;
+        text-align: right;
+        padding: 20px;
+    }
+}
+
+@media(max-width: 767px) {
+    .main-content::before {
+        content: "living in a big city";
+        background: var(--color-primary);
+        font-family: var(--title-font);
+        width: 80%;
+        height: 50px;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: bold;
+        position: absolute;
+        top: -30px;
+        left: 10px;
+        text-align: right;
+        padding: 15px 10px;
+    }
+}
+
+.main-content__photo {
+    width: 45%;
+    margin: 0 30px;
+}
+
+@media(max-width: 1023px) {
+    .main-content__photo {
+        width: 70%;
+        margin: 50px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 767px) {
+    .main-content__photo {
+        width: 80%;
+        margin: 30px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.main-content__article {
+    margin: 70px 50px 0 0;
+}
+
+@media(max-width: 1023px) {
+    .main-content__article {
+        margin: 50px 30px;
+    }
+}
+
+@media(max-width: 767px) {
+    .main-content__article {
+        margin: 50px 20px;
+    }
+}
+
+.main-content__author {
+    font-weight: bold;
+    font-family: var(--article-font);
+}
+
+@media(max-width: 1023px) {
+    .main-content__author {
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 767px) {
+    .main-content__author {
+        font-size: 16px;
+    }
+}
+
+.main-content__paragraph {
+    font-family: var(--article-font);
+    font-size: 14px;
+}
+
+@media(max-width: 1023px) {
+    .main-content__paragraph {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+
+@media(max-width: 767px) {
+    .main-content__paragraph {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}

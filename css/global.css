@@ -1,0 +1,25 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #ffda3d;
+    --article-font: 'Lusitana', serif;
+    --title-font: 'Francois One', sans-serif;
+}
+
+body {
+    width: 1000px;
+    margin: auto;
+    max-width: 100%;
+    padding: 60px 20px 20px 20px;
+}
+
+@media(max-width: 767px) {
+    body {
+        width: 767px;
+        margin: auto;
+        max-width: 100%;
+        padding: 100px 5px 20px 5px;
+    }
+}

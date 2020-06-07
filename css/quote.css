@@ -1,0 +1,45 @@
+.quote {
+    margin: 100px auto;
+}
+
+@media(max-width: 1023px) {
+    .quote {
+        margin: 0 10px;
+    }
+}
+
+.quote__background {
+    background: url("/img/blocks2.jpg");
+    height: 300px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    margin: 0 50px;
+}
+
+@media(max-width: 767px) {
+    .quote__background {
+        display: none;
+    }
+}
+
+.quote__background::after {
+    content: '"Trust fund hella knausgaard, small batch mlkshk cold-pressed\00000a authentic YOLO narwhal forage bushwick ethical."';
+    white-space: pre;
+    font-family: var(--title-font);
+    font-weight: bold;
+    font-size: 14px;
+    width: 600px;
+    height: 70px;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    text-align: right;
+    padding: 20px;
+    position: absolute;
+    bottom: -20px;
+    left: -50px;
+}
+
+/* Authors may include newlines in the generated content by writing the "\A" escape sequence in one of the strings after the 'content' property. This inserted line break is still subject to the 'white-space' property. See "Strings" and "Characters and case" for more information on the "\A" escape sequence. */
+
+/* When escaping arbitrary strings, however, it's advisable to use \00000a instead of \A, because any number or [a-f] character followed by the new line may give unpredictable results */
