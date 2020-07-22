@@ -17,13 +17,13 @@
     }
 }
 
-.social-media_menu {
+.social-media__menu {
     list-style: none;
     padding: 0;
 }
 
 @media(max-width: 767px) {
-    .social-media_menu {
+    .social-media__menu {
         list-style: none;
         padding: 0 50px;
         display: flex;
